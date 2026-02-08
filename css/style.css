@@ -282,9 +282,19 @@ header.open .mask {
 .sec06 .sec06-method .method-inner {
   padding: 0 30px 80px 30px;
 }
+@media screen and (max-width: 450px) {
+  .sec06 .sec06-method .method-inner {
+    padding: 0 15px 50px 15px;
+  }
+}
 .sec06 .sec06-method .method-readmore {
   position: relative;
   margin-bottom: 100px;
+}
+@media screen and (max-width: 450px) {
+  .sec06 .sec06-method .method-readmore {
+    margin-bottom: 70px;
+  }
 }
 .sec06 .sec06-method .method-readmore:has(input:checked) {
   margin-bottom: 50px;
@@ -299,6 +309,16 @@ header.open .mask {
      object-position: top;
   overflow: hidden;
   transition: height 0.5s ease-in-out;
+}
+@media screen and (max-width: 600px) {
+  .sec06 .sec06-method .method-readmore .method-text {
+    height: 150px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .sec06 .sec06-method .method-readmore .method-text {
+    height: 110px;
+  }
 }
 .sec06 .sec06-method .method-readmore input {
   display: none;
@@ -317,8 +337,14 @@ header.open .mask {
   font-size: 20px;
   cursor: pointer;
   position: absolute;
-  bottom: -80px;
+  bottom: -60px;
   transition: opacity 0.3s ease;
+}
+@media screen and (max-width: 450px) {
+  .sec06 .sec06-method .method-readmore label {
+    font-size: 14px;
+    bottom: -50px;
+  }
 }
 .sec06 .sec06-method .sec06-case .sec06-btnarea summary {
   position: relative;
@@ -335,6 +361,12 @@ header.open .mask {
   background-color: #333333;
   transition: all 0.3s ease;
 }
+@media screen and (max-width: 450px) {
+  .sec06 .sec06-method .sec06-case .sec06-btnarea summary::before, .sec06 .sec06-method .sec06-case .sec06-btnarea summary::after {
+    width: 12px;
+    right: 10%;
+  }
+}
 .sec06 .sec06-method .sec06-case .sec06-btnarea summary::after {
   transform: rotate(-90deg) translateX(1px);
 }
@@ -345,6 +377,12 @@ header.open .mask {
   background-color: #ffffff;
   padding-bottom: 80px;
   margin-bottom: 80px;
+}
+@media screen and (max-width: 450px) {
+  .sec06 .sec06-method .sec06-youtubearea {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+  }
 }
 .sec06 .sec06-method .sec06-youtubearea .sec06-youtube {
   position: relative;
@@ -372,6 +410,10 @@ header.open .mask {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   display: flex;
+  cursor: grab;
+}
+.sec07 .sec07-model:active {
+  cursor: grabbing;
 }
 .sec07 .sec07-model::before, .sec07 .sec07-model::after {
   content: "";
@@ -392,6 +434,11 @@ header.open .mask {
   background-color: #eee8d7;
   padding-bottom: 80px;
 }
+@media screen and (max-width: 450px) {
+  .sec09 {
+    padding-bottom: 50px;
+  }
+}
 .sec09 .tab_wrapper .tab-area {
   gap: 0;
 }
@@ -399,6 +446,11 @@ header.open .mask {
 .sec10 {
   background-color: #ffffff;
   padding-bottom: 80px;
+}
+@media screen and (max-width: 450px) {
+  .sec10 {
+    padding-bottom: 50px;
+  }
 }
 .sec10 .slick .slider {
   width: 100%;
@@ -437,9 +489,12 @@ header.open .mask {
 
 .sec11 {
   background-color: #eee9d7;
-}
-.sec11 .sec11-faq {
   padding-bottom: 80px;
+}
+@media screen and (max-width: 450px) {
+  .sec11 {
+    padding-bottom: 30px;
+  }
 }
 .sec11 .sec11-faq details summary {
   position: relative;
@@ -470,6 +525,9 @@ header.open .mask {
 }
 .sec11 .sec11-faq details[open] summary::after {
   transform: translateY(-50%);
+}
+.sec11 .sec11-faq .sec11-line {
+  vertical-align: top;
 }
 
 .sec12 {
