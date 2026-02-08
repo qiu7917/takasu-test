@@ -41,6 +41,7 @@ $(function () {
         centerMode: true,
         centerPadding: '20px',
     });
+    
 
     /*=================================================
     アコーディオンメニュー
@@ -48,6 +49,7 @@ $(function () {
     $('.accordion').on('click', function () {
         details.removeAttr('open');
     });
+    
 
 
     /*=================================================
